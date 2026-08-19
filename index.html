@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manus Movies</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho & Busca -->
+  <header class="header">
+    <div class="logo">
+      <h1>Manus<span>Movies</span></h1>
+    </div>
+    
+    <form id="search-form" class="search-box">
+      <input 
+        type="text" 
+        id="search-input" 
+        placeholder="Buscar filme por título..." 
+        aria-label="Buscar filmes"
+      />
+      <button type="submit">Buscar</button>
+    </form>
+
+    <nav class="nav-tabs">
+      <button id="btn-popular" class="tab-btn active">Populares</button>
+      <button id="btn-favorites" class="tab-btn">Meus Favoritos</button>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+    <h2 id="section-title">Filmes Populares</h2>
+
+    <!-- Feedback de Carregamento e Erro -->
+    <div id="status-message" class="status-message hidden"></div>
+
+    <!-- Grid onde os cards de filmes serão inseridos -->
+    <section id="movies-grid" class="movies-grid"></section>
+  </main>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
