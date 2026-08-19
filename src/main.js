@@ -14,7 +14,7 @@ const btnFavorites = document.getElementById('btn-favorites');
 let currentView = 'popular'; // 'popular', 'search', ou 'favorites'
 
 // Base URL oficial do TMDB para carregar as capas dos filmes
-const POSTER_BASE_URL = 'https://image.tmdb.org/t500';
+const POSTER_BASE_URL = 'https://image.tmdb.org/t/p/w500';
 
 // --- FUNÇÕES DE INTERFACE (UX & DOM) ---
 
